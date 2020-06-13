@@ -1,0 +1,47 @@
+<div class="main-login">
+  <div class="card-main">
+    <mat-card class="login-card">
+      <div class="login-pic">
+        <mat-card-title>Login</mat-card-title>
+        <img src="../../../assets/images/img-01.png" alt="IMG">
+      </div>
+
+      <mat-card-content>
+        <form [formGroup]="loginForm" (ngSubmit)="formValidate()">
+          <p>
+            <mat-form-field>
+              <mat-label>Username</mat-label>
+              <input type="text" matInput placeholder="Username" formControlName="username">
+              <mat-error *ngIf="f.username.errors?.required">Username is Required</mat-error>
+            </mat-form-field>
+          </p>
+
+          <p>
+            <mat-form-field>
+              <input type="text" matInput placeholder="Phone Number" formControlName="phone">
+              <mat-error *ngIf="f.phone.errors?.required">Phone Number is required</mat-error>
+              <mat-error *ngIf="f.phone.errors?.pattern">Enter a valid Phone number</mat-error>
+            </mat-form-field>
+          </p>
+
+
+          <p *ngIf="otpFormControlCheck">
+            <mat-form-field>
+              <input type="text" matInput placeholder="OTP" formControlName="otp">
+              <mat-hint>OTP Sent Successfully</mat-hint>
+              <mat-error *ngIf="f.otp.errors?.required && f.otp.touched">OTP is Required</mat-error>
+              <mat-error *ngIf="f.otp.errors?.pattern && f.otp.touched">Enter a valid OTP</mat-error>
+            </mat-form-field>
+          </p>
+
+          <div class="button" *ngIf="!otpRequestStatusCode">
+            <button type="submit" mat-raised-button color="accent" [disabled]="!loginForm.valid">Login</button>
+          </div>
+          <div class="button" *ngIf="dataLoaded">
+            <button type="submit" mat-raised-button color="accent" [disabled]="!loginForm.valid">Verfiy Otp</button>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

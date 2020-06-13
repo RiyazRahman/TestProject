@@ -1,0 +1,31 @@
+<div class="title">
+    <h2>Dashboard</h2>
+</div>
+<div class="dashboard-cards">
+    <div class="organisations-card card" (click)="navigateToList()">
+        <div class="organisation-title">
+            <div class="org-icon">
+                <i class="fa fa-building-o" aria-hidden="true"></i>
+            </div>
+            <div class="org-desc">
+                <p>Number of Chit Fund Organisations</p>
+            </div>
+        </div>
+        <div class="stats">
+            <h4>{{stats}}</h4>
+        </div>
+    </div>
+    <div class="branches-card card">
+        <div class="branch-title">
+            <div class="branch-icon">
+                <i class="fa fa-building-o" aria-hidden="true"></i>
+            </div>
+            <div class="branch-desc">
+                <p>Number of Chit Fund Organisations</p>
+            </div>
+        </div>
+        <div class="stats">
+            <h4>{{branches}}</h4>
+        </div>
+    </div>
+</div>

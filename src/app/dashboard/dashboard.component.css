@@ -1,0 +1,67 @@
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-bottom: 20px solid darkblue;
+  transition: all 0.3s linear;
+  text-align: center;
+  margin: 30px;
+  height: 300px;
+  width: 350px;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.stats {
+  font-family: 'Roboto', sans-serif;
+}
+
+.organisations-card {
+  cursor: pointer;
+}
+
+.stats h4 {
+  font-size: 3rem;
+  color: darkblue;
+}
+
+.title {
+  text-align: center;
+}
+
+.organisation-title {
+  height: 100px;
+  display: flex;
+}
+
+.org-icon {
+  margin-right: 10px;
+}
+
+.org-desc p {
+  font-weight: 500;
+  color: darkblue;
+}
+
+.branch-title {
+  height: 100px;
+  display: flex;
+}
+
+.branch-icon {
+  margin-right: 10px;
+}
+
+.branch-desc p {
+  font-weight: 500;
+  color: darkblue;
+}

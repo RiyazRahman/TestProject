@@ -1,0 +1,68 @@
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.example-events {
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #555;
+}
+
+.side-menu {
+    background-color: #00008b;
+}
+
+.side-nav {
+    list-style-type: none;
+}
+
+.nav-item {
+    color: #ffffff;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-item-div {
+    display: flex;
+}
+
+.side-nav-div {
+    padding: 10px;
+    margin: 50px 0px 0px 10px;
+}
+
+.nav-item-div {
+    margin: 10px 0px 35px 0px;
+}
+
+.nav-item-icon {
+    color: white;
+}
+
+.nav-item-title a {
+    padding-top: 0px;
+}
+
+.brand-div {
+    padding: 10px;
+    border-bottom: 0.5px solid white;
+    display: flex;
+}
+
+.brand-pic img {
+    height: 30px;
+    width: 30px;
+}
+
+.brand-title {
+    padding: 5px 0px 0px 20px;
+    color: white;
+}

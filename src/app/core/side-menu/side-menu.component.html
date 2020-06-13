@@ -1,0 +1,36 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" opened (opened)="true" class="side-menu">
+    <div class="brand-div">
+      <div class="brand-pic">
+        <img src="../../../assets/images/Telengana_State_Emblem.png" alt="IMG">
+      </div>
+      <div class="brand-title">
+        <p>Telangana</p>
+      </div>
+    </div>
+    <div class="side-nav-div">
+      <div class="nav-item-div" routerLinkActive="active">
+        <div class="nav-item-icon">
+          <i class="fa fa-th" aria-hidden="true"></i>
+        </div>
+        <div class="nav-item-title">
+          <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+        </div>
+      </div>
+      <div class="nav-item-div" routerLinkActive="active">
+        <div class="nav-item-icon">
+          <i class="fa fa-building-o" aria-hidden="true"></i>
+        </div>
+        <div class="nav-item-title">
+          <a class="nav-link" data-toggle="dropdown" routerLink="/organisations">Foreman Organisations
+          </a>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar></mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
