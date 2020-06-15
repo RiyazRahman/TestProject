@@ -9,11 +9,10 @@ import { MatTableModule } from '@angular/material/table';
 
 
 
-
-import { SideMenuComponent } from '../core/side-menu/side-menu.component';
 import { DashboardComponent } from './dashboard.component';
 import { OrganisationsComponent } from './organisations/organisations.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -23,9 +22,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     declarations: [
         DashboardComponent,
         OrganisationsComponent,
-        SideMenuComponent
     ],
     imports: [
+        CommonModule,
         DashboardRoutingModule,
         MatSidenavModule,
         MatCheckboxModule,

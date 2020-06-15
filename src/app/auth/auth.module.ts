@@ -7,10 +7,6 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import { AuthenticationService } from './auth.service';
-import { AuthGuardService } from './auth-guard.service';
-
-
 
 
 
@@ -27,7 +23,6 @@ import { AuthGuardService } from './auth-guard.service';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-  ],
-  providers: [ AuthenticationService, AuthGuardService ]
+  ]
 })
 export class AuthModule {}

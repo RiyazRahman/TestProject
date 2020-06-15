@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { DashboardService } from './dashboard/dashboard.service';
 import { AuthModule } from './auth/auth.module';
+import { CoreModule } from './core/core.module';
 
 
 @NgModule({
@@ -21,9 +22,9 @@ import { AuthModule } from './auth/auth.module';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    AuthModule
+    AuthModule,
+    CoreModule
   ],
-  providers: [DashboardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

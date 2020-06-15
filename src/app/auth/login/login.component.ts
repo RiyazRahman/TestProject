@@ -49,10 +49,8 @@ export class LoginComponent implements OnInit {
     this.authService.loginUser(username, phone).subscribe(
       data => {
         this.otpRequestStatusCode = data.status;
+        this.checkStatus();
       });
-    setTimeout(() => {
-      this.checkStatus();
-    }, 300);
   }
 
 
